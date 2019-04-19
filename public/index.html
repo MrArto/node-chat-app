@@ -2,19 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
     <title></title>
   </head>
-  <body>
-    <p>Wellcome</p>
+  <body class="chat">
+    <div class="chat__sidebar">
+      <h3>People</h3>
+      <div id="users"></div>
+    </div>
 
-<ol id="messages">
-</ol>
+    <div class="chat__main">
+      <ol id="messages" class="chat__messages"></ol>
+      <div class="chat__footer">
+        <form id="message_form">
+          <input name="message" autofocus autocomplete="off" type="text" placeholder="type your message"/>
+          <button>Send</button>
+        </form>
+        <button id="send-location">Send Location</button>
+      </div>
+    </div>
 
-    <form id="message_form">
-      <input name="message" type="text" placeholder="type your message"/>
-      <button>Send</button>
-    </form>
-    <button id="send-location">Send Location</button>
+
+
+
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.4.0.min.js"></script>
     <script src="/js/index.js"></script>
