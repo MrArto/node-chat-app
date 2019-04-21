@@ -15,14 +15,7 @@ var lastMessageHeight = newMessage.prev().innerHeight();
 
 if (clientHeight + scrollTop + newMessageHeigth + lastMessageHeight >= scrollHeight) {
   messages.scrollTop(scrollHeight);
-  console.log('should scroll');
-  console.log(clientHeight);
-  console.log(scrollTop);
-  console.log('so it should scroll');
-  console.log(scrollHeight);
-  console.log(newMessageHeigth);
-
-}
+};
 }
 
 
